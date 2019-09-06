@@ -63,9 +63,10 @@ public class Cadastro extends javax.swing.JFrame {
         setTitle("Cadastro de Clientes");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informações do cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informações do cliente", 0, 0, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        jPanel1.setFont(new java.awt.Font("Arial Black", 0, 10)); // NOI18N
 
-        nome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         nome.setText("Nome:");
 
         txtNome.setToolTipText("");
@@ -75,7 +76,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        endereço.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        endereço.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         endereço.setText("Endereço:");
 
         txtEnd.setToolTipText("Digite o endereço do cliente");
@@ -85,7 +86,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        celular.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        celular.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         celular.setText("Celular:");
 
         try {
@@ -100,7 +101,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        cpf.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        cpf.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         cpf.setText("CPF:");
 
         try {
@@ -115,7 +116,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        bairro.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        bairro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         bairro.setText("Bairro:");
 
         txtBairro.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +125,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        numero.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        numero.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         numero.setText("Numero:");
 
         txtNum.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +134,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        Cidade.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        Cidade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         Cidade.setText("Cidade:");
 
         txtCiddade.addActionListener(new java.awt.event.ActionListener() {
@@ -142,7 +143,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        uf.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        uf.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         uf.setText("UF:");
 
         try {
@@ -156,7 +157,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        CEP.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        CEP.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         CEP.setText("CEP:");
         CEP.setToolTipText("");
 
@@ -172,7 +173,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        Telefone.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        Telefone.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         Telefone.setText("Telefone:");
 
         try {
@@ -213,11 +214,15 @@ public class Cadastro extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(endereço, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CEP, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cidade, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE))
+                            .addComponent(Cidade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(celular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(endereço, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CEP, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -252,10 +257,7 @@ public class Cadastro extends javax.swing.JFrame {
                                             .addComponent(txtFTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(txtEnd)
                                         .addComponent(txtNome)))
-                                .addGap(0, 14, Short.MAX_VALUE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(celular, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                                .addGap(0, 16, Short.MAX_VALUE))))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -278,27 +280,27 @@ public class Cadastro extends javax.swing.JFrame {
                         .addGap(28, 28, 28)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
+                        .addComponent(Cidade, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CEP))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtCiddade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(uf, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtFUF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Cidade, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtFUF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addComponent(txtFCEP, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                        .addComponent(txtFCEP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtFCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cpf))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(cpf)
+                    .addComponent(txtFCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtFCelular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(celular)
                     .addComponent(txtFTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Telefone))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(JbtnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
                     .addComponent(JbtnSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
