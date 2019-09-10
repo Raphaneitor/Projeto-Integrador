@@ -154,17 +154,12 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="Cidade" alignment="0" max="32767" attributes="0"/>
                               <Component id="celular" max="32767" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="endereço" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <Component id="CEP" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
-                                      <Component id="cpf" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
-                                      <Component id="nome" alignment="0" min="-2" pref="51" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="CEP" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="cpf" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="nome" alignment="0" min="-2" pref="51" max="-2" attributes="0"/>
+                              <Component id="endereço" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -188,10 +183,10 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="JbtnCancelar" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
                                           <Component id="JbtnSalvar" min="-2" pref="85" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="JbtnCancelar" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="txtFCEP" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
@@ -239,38 +234,33 @@
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="Cidade" min="-2" pref="28" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CEP" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCiddade" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="uf" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                          <Component id="txtFUF" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                          <Component id="txtFCEP" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Cidade" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="txtCiddade" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="uf" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="txtFUF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="CEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtFCEP" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="cpf" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtFCpf" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="14" max="32767" attributes="0"/>
+                  <EmptySpace pref="15" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtFCelular" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="celular" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtFTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Telefone" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="44" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="JbtnCancelar" pref="49" max="32767" attributes="0"/>
-                      <Component id="JbtnSalvar" max="32767" attributes="0"/>
+                  <EmptySpace pref="43" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="JbtnCancelar" linkSize="1" alignment="3" min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="JbtnSalvar" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
